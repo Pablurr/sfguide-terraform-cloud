@@ -15,6 +15,26 @@ terraform {
   }
 }
 
+variable "SNOWFLAKE_ACCOUNT" {
+  description = "The account for Snowflake authentication"
+  type        = string
+}
+
+variable "SNOWFLAKE_PASSWORD" {
+  description = "The password for Snowflake authentication"
+  type        = string
+}
+
+variable "SNOWFLAKE_REGION" {
+  description = "The region of the Snowflake account"
+  type        = string
+}
+
+variable "SNOWFLAKE_USER" {
+  description = "The user for Snowflake authentication"
+  type        = string
+}
+
 provider "snowflake" {
 }
 
