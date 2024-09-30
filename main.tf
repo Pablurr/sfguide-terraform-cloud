@@ -25,15 +25,13 @@ variable "SNOWFLAKE_PASSWORD" {
   type        = string
 }
 
-variable "SNOWFLAKE_REGION" {
-  description = "The region of the Snowflake account"
-  type        = string
-}
-
 variable "SNOWFLAKE_USER" {
   description = "The user for Snowflake authentication"
   type        = string
 }
+
+
+
 
 provider "snowflake" {
 }
