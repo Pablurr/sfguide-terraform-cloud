@@ -46,3 +46,9 @@ resource "snowflake_schema" "demo_schema" {
   name     = "DEMO_SCHEMA"
   comment  = "Schema for Snowflake Terraform demo"
 }
+
+resource "snowflake_warehouse" "warehouse" {
+  name           = "DEMO_WH"
+  warehouse_size = "xsmall"
+  auto_suspend   = 60
+}
